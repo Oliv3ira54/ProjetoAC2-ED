@@ -6,9 +6,10 @@
 #include "registro.h"
 #include "vetor.h"
 #include "lista.h"
-
-#define TOTAL_REGISTROS 100000
-#define TOTAL_BUSCAS 50000
+#include "vetor.c"
+#include "lista.c"
+#define TOTAL_REGISTROS 50000
+#define TOTAL_BUSCAS 10000
 #define TOTAL_REMOCOES 10000
 
 Registro gerarRegistro(int id) {
@@ -168,5 +169,8 @@ int main() {
     liberarVetor(&vetor);
     liberarLista(&lista);
 
+    system("pause");
+
     return 0;
+
 }
